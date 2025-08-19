@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSound.AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <header class="w-full py-4 px-8 flex justify-between items-center bg-black/40 backdrop-blur">
+      <h1 class="text-2xl font-bold text-indigo-400">CSound.AI</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex items-center justify-center">
+      <div class="text-center p-6 max-w-2xl">
+        <h2 class="text-5xl font-extrabold mb-6">Your AI Assistant for CSound & Cabbage</h2>
+        <p class="text-lg text-gray-300 mb-10">
+          CSound.AI is your AI-powered companion for learning and creating with
+          CSound and Cabbage. Whether you’re just starting or already a pro,
+          it helps you learn faster, code smarter, and bring your sound ideas to life.
+        </p>
+        <a
+          href="https://app--csoundai-d568fb39.base44.app/"
+          class="px-10 py-4 bg-indigo-600 text-white text-xl font-semibold rounded-2xl shadow-lg transition transform hover:bg-indigo-500 hover:scale-105"
+        >
+          🚀 Launch CSound.AI
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-4 text-center text-gray-500 text-sm bg-black/40 backdrop-blur">
+      © <span id="year"></span> CSound.AI — All Rights Reserved
+    </footer>
+
+    <script>
+      // Auto-update footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
